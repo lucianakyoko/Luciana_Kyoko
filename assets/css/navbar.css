@@ -4,10 +4,12 @@
   justify-content: space-between;
 
   position: sticky;
+  transition: all 1s ease-in;
 }
 
 .nav_logo {
   padding: 2rem;
+  
 }
 
 .nav_list {
