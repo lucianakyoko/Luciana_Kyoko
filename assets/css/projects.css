@@ -1,0 +1,157 @@
+.projects_container {
+  background-color: var(--color-dark-blue);
+  padding: 1rem;
+}
+
+.carousel_container {
+  width: 100%;
+  height: 90vh;
+}
+
+.carousel_slide {
+  background-color: var(--color-white);
+  border-radius: 12px;
+
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* SLIDES: */
+.slide_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 100%;
+  margin-right: 2rem;
+}
+
+.slide_descriptions_side {
+  width: 100%;
+  padding: 1rem;
+  flex: 1;
+}
+
+.slide_project_name {
+  color: var(--color-gray-80);
+  font-size: 1.8rem;
+  padding-bottom: .8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slide_project_description {
+  color: var(--color-gray-100);
+  font-family: var(--font-q);
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-bottom: .8rem;
+}
+
+.slide_project_icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.slide_project_icons img {
+  padding-left: 1.6rem;
+}
+
+.slide_image_side {
+  width: 80vw;
+}
+.slide_image_side img{
+  border-radius: 16px;
+  width: 100%;
+  padding: 1rem;
+}
+
+
+/* BUTTONS: */
+.carousel_buttons {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel_buttons img:first-child,
+.carousel_buttons img:last-child {
+  padding: 1rem;
+  background-color: #778899;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+
+/* MEDIA QUERIES: */
+@media screen and (min-width: 768px) {
+  .slide_project_name {
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    padding-bottom: 2rem;
+  }
+
+  .slide_project_description {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+
+  .slide_project_icons img {
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .projects_container {
+    background-color: var(--color-white);
+    background-image: url(../img/plant-project.svg);
+    background-repeat: no-repeat;
+    background-position-x: 5rem ;
+    background-position-Y: 100% ;
+
+    height: 90vh;
+    padding: 1rem;
+  }
+  .carousel_slide {
+    padding: 2rem;
+    width: 70%;
+    height: 55%;
+
+    border: 1px solid var(--color-blue-12);
+    position: relative;
+    left: 10%;
+  }
+  .slide_items {
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .slide_image_side {
+    width: 50%;
+  }
+
+  .carousel_buttons {
+    position: relative;
+    left: 10%;
+  }
+  
+  .carousel_buttons img:first-child,
+  .carousel_buttons img:last-child {
+  background-color: var(--color-blue-100);
+}
+}
