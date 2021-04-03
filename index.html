@@ -14,20 +14,22 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/projects.css">
     <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
   </head>
 
   <body>
     <header>
       <nav class="nav_container">
         <img class="nav_logo" src="./assets/img/logo.svg" alt="Luciana Kyoko logo">
-        <div class="nav_burger toggle">
+        <div class="nav_burger">
           <span class="burger_line line1"></span>
           <span class="burger_line line2"></span>
           <span class="burger_line line3"></span>
         </div>
   
-        <ul class="nav_list">
-          <li><a href="#home" class="nav_item">Home</a></li>
+        <ul class="nav_list nav_list-open">
+          <li><a href="#home" class="nav_item active">Home</a></li>
           <li><a href="#projects" class="nav_item">Projetos</a></li>
           <li><a href="#about" class="nav_item">Sobre</a></li>
           <li><a href="#contact" class="nav_item">Contato</a></li>
@@ -41,8 +43,7 @@
         <div class="home_hello">
           <p class="home_hello_intro">Olá,<br>
             Sou a <span class="home_hello-darker">Luciana Kyoko</span>,<br>
-            Desenvolvedora Front-end
-          </p>
+            Desenvolvedora Front-end</p>
           <p class="home_hello_skills">
             HTML | CSS | Bootstrap | JavaScript | Figma | Git | GitHub | Chatbot (ALTU)
           </p>
@@ -61,11 +62,11 @@
           <ul class="carousel_slide">
             <li class="slide_items">
               <div class="slide_descriptions_side">
-                <h3 class="slide_project_name">Project 1</h3>
-                <p class="slide_project_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore tenetur aliquid dolorum quasi aut commodi sunt nihil blanditiis.</p>
+                <h3 class="slide_project_name">Happy</h3>
+                <p class="slide_project_description">Happy é um projeto web desenvolvido durante a #NLW3 que visa facilitar visitas aos centros de acolhimento infantil próximos à você.</p>
                 <div class="slide_project_icons">
-                  <img src="./assets/img/github.svg" alt="" class="slide_github">
-                  <img src="./assets/img/link.svg" alt="" class="slide_link">
+                  <a href="https://github.com/lucianakyoko/Happy" target="_blank" rel="noopener noreferrer"><img src="./assets/img/github.svg" alt="" class="slide_github"></a>
+                  <!-- <img src="./assets/img/link.svg" alt="" class="slide_link"> -->
                 </div>
               </div>
               <div class="slide_image_side">
@@ -75,11 +76,11 @@
 
             <li class="slide_items">
               <div class="slide_descriptions_side">
-                <h3 class="slide_project_name">Project 2</h3>
-                <p class="slide_project_description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, voluptatum esse! Ea.</p>
+                <h3 class="slide_project_name">Travelly</h3>
+                <p class="slide_project_description">É uma agência de turismo especializada na organização de viagens e passeios.</p>
                 <div class="slide_project_icons">
-                  <img src="./assets/img/github.svg" alt="" class="slide_github">
-                  <img src="./assets/img/link.svg" alt="" class="slide_link">
+                  <a href="https://github.com/lucianakyoko/Travelly" target="_blank" rel="noopener noreferrer"><img src="./assets/img/github.svg" alt="" class="slide_github"></a>
+                  <a href="https://travelly-lk.netlify.app" target="_blank" rel="noopener noreferrer"><img src="./assets/img/link.svg" alt="" class="slide_link"></a>
                 </div>
               </div>
               <div class="slide_image_side">
@@ -89,11 +90,11 @@
 
             <li class="slide_items">
               <div class="slide_descriptions_side">
-                <h3 class="slide_project_name">Project 3</h3>
-                <p class="slide_project_description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, voluptatum esse!Quasi, voluptatum esse! Ea.</p>
+                <h3 class="slide_project_name">Portifólio do Edu</h3>
+                <p class="slide_project_description">Esta página foi desenvolvida durante o curso The Creative HTML5 & CSS3 Course - Developed By Ed. </p>
                 <div class="slide_project_icons">
-                  <img src="./assets/img/github.svg" alt="" class="slide_github">
-                  <img src="./assets/img/link.svg" alt="" class="slide_link">
+                  <a href="https://github.com/lucianakyoko/edu-portfolio" target="_blank" rel="noopener noreferrer"><img src="./assets/img/github.svg" alt="" class="slide_github"></a>
+                  <!-- <img src="./assets/img/link.svg" alt="" class="slide_link"> -->
                 </div>
               </div>
               <div class="slide_image_side">
@@ -103,27 +104,25 @@
 
             <li class="slide_items">
               <div class="slide_descriptions_side">
-                <h3 class="slide_project_name">Project 4</h3>
-                <p class="slide_project_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga non reiciendis eligendi ratione iure totam?</p>
+                <h3 class="slide_project_name">Elena Joy</h3>
+                <p class="slide_project_description">Elena é fotógrafa profissional especializada em modas.</p>
                 <div class="slide_project_icons">
-                  <img src="./assets/img/github.svg" alt="" class="slide_github">
-                  <img src="./assets/img/link.svg" alt="" class="slide_link">
+                  <a href="https://github.com/lucianakyoko/Elena-Joy" target="_blank" rel="noopener noreferrer"><img src="./assets/img/github.svg" alt="" class="slide_github"></a>
+                  <a href="https://elenajoy-lk.netlify.app" target="_blank" rel="noopener noreferrer"><img src="./assets/img/link.svg" alt="" class="slide_link"></a>
                 </div>
               </div>
               <div class="slide_image_side">
                 <img src="./assets/img/projects/projeto4.jpg" alt="">
               </div>
             </li>
-
-
           </ul>
 
           <div class="carousel_buttons">
             <img id="btn-prev" src="./assets/img/icons/icon-prev.svg" title="Ir para próximo projeto" alt="">
             <img id="btn-next" src="./assets/img/icons/icon-next.svg" title="Voltar para projeto anterior" alt="Voltar para projeto anterior">
           </div>
-
         </div>
+        
       </section>
 
       <section class="about_container" id="about">
@@ -132,11 +131,11 @@
           <div class="about_details_side">
             <div class="about_description">
               <p>Sou formada em Administração de Empresas (com habilitação em finanças), porém, minha paixão sempre foi o universo das tecnologias.</p>
-              <p>Comecei a estudar programação em novembro de 2020. Parece pouco tempo, mas olha o tanto de coisa que já aprendi e desenvolvi.</p>
-              <p>Amo o que estou fazendo e estou altamente motivada para colaborar em algum projeto. </p>
+              <p>Comecei a estudar programação em novembro de 2020. Acesse o link do meu currículo para ver o que já aprendi e desenvolvi.</p>
+              <p>Amo o que estou fazendo e estou altamente motivada para colaborar em algum projeto.</p>
             </div>
 
-            <div class="about_resume">Meu Currículo</div>
+            <div><a class="about_resume" href="./assets/files/resume-lucianaKyoko.pdf" target="_blank">Meu Currículo</a></div>
           </div>
           <div class="about_box_container">
             <h3 class="tecs">TECNOLOGIAS E FERRAMENTAS</h3>
@@ -182,7 +181,43 @@
           </div>
         </div>
       </section>
+
+      <section class="contact_container" id="contact">
+        <h2 class="subtitle">Contato</h2>
+        <div class="contact_box">
+          <div class="contact_icons">
+            <a href="https://www.instagram.com/luciana_kyoko" rel="noopener noreferrer" target="_blank"><img class="contact_icons_item" src="./assets/img/icons/icon-instagram.svg" alt="Ícone Instagram" title="Ir para Instagram"></a>
+            <a href="https://www.linkedin.com/in/lucianakyoko" rel="noopener noreferrer" target="_blank"><img class="contact_icons_item" src="./assets/img/icons/icon-linkedin.svg" alt="Ícone Linkedin" title="Ir para Linkedin"></a>
+            <a href="https://github.com/lucianakyoko" rel="noopener noreferrer" target="_blank"><img class="contact_icons_item" src="./assets/img/icons/icon-github1.svg" alt="Ícone GitHub" title="Ir para GitHub"></a>
+            <a href="https://pt.stackoverflow.com/users/213097/luciana-kyoko" rel="noopener noreferrer" target="_blank"><img class="contact_icons_item" src="./assets/img/icons/icon-stackoverflow.svg" alt="Ícone Stackoverflow" title="Ir para Stackoverflow"></a>
+          </div>
+
+          <form class="contact_form" action="https://formspree.io/f/xknknwdk" method="POST">
+            <div class="contact_item">
+              <input type="text" name="name" id="name" required>
+              <label class="contact_label" for="name"><span class="label_content">Nome: </span></label>
+            </div>
+
+            <div class="contact_item">
+              <input type="email" name="email" id="email" required>
+              <label class="contact_label" for="name"><span class="label_content">E-mail: </span></label>
+            </div>
+
+            <div class="contact_item">
+              <textarea name="msg" id="msg" cols="30" rows="3" required></textarea> 
+              <label class="contact_label" for="name"><span class="label_content">Mensagem: </span></label>
+            </div>
+
+            <button class="contact_btn" type="submit">Enviar mensagem</button>
+          </form>
+        </div>
+      </section>
+
     </main>
+    <footer class="footer_container">
+      <p class="footer_copy">&copy2020 Luciana Kyoko. Todos os direitos reservados</p>
+      <p class="footer_design">designed with &#9829 by lukyoko</p>
+    </footer>
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/projects.js"></script>
   </body>

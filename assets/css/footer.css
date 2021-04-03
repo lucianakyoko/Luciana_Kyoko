@@ -1,0 +1,47 @@
+.footer_container {
+  padding: 4rem 2rem 2rem 2rem;
+  margin-top: 4rem;
+  background-color: var(--color-blue-12);
+
+  background-image: url(../img/plant-project.svg);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position-x: 50%;
+  background-position-y: 12px;
+}
+
+.footer_container p {
+  color: var(--color-blue-100);
+  font-size: 1rem;
+  text-align: right;
+}
+
+.footer_copy {
+  padding: 2rem 0;
+}
+
+
+/* MEDIA QUERIES: */
+@media screen and (min-width: 414px) {
+  .footer_container {
+    background-size: 100px;
+    background-position-x: 20%;
+    background-position-y: 50%;
+  }
+
+  .footer_container p {
+    padding-right: 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer_container p:first-child {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1224px) {
+ .footer_container p:first-child {
+    font-size: 1.4rem;
+  }
+}
