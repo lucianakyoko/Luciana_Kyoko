@@ -6,6 +6,7 @@
 .carousel_container {
   width: 100%;
   height: 90vh;
+
 }
 
 .carousel_slide {
@@ -14,12 +15,13 @@
 
   width: 90%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: .8rem;
 
   display: flex;
   align-items: center;
 
   overflow: hidden;
+
 }
 
 /* SLIDES: */
@@ -29,7 +31,7 @@
   align-items: center;
 
   min-width: 100%;
-  margin-right: 2rem;
+
 }
 
 .slide_descriptions_side {
@@ -97,6 +99,13 @@
 
 /* MEDIA QUERIES: */
 @media screen and (min-width: 768px) {
+  .carousel_slide {
+    min-width: 70%;
+    margin: auto;
+    padding: 2rem;
+
+  }
+
   .slide_project_name {
     font-size: 2.5rem;
     letter-spacing: 4px;
@@ -111,22 +120,25 @@
     padding-bottom: 2rem;
   }
 
-  .slide_project_icons img {
-    padding-right: 1.5rem;
+  .slide_image_side img{
+    width: 90%;
+    padding: 3rem;
   }
 }
 
 @media screen and (min-width: 960px) {
   .projects_container {
+    width: 85%;
     background-color: var(--color-white);
-    background-image: url(../img/plant-project.svg);
+    background-image: url(../img/plant.svg);
     background-repeat: no-repeat;
-    background-position-x: 5rem ;
-    background-position-Y: 100% ;
-
-    height: 90vh;
-    padding: 1rem;
+    background-position-y: bottom;
+    background-size: +15%;
+    margin: auto;
+    height: 100vh;
   }
+
+
   .carousel_slide {
     padding: 2rem;
     width: 70%;
@@ -136,6 +148,7 @@
     position: relative;
     left: 10%;
   }
+
   .slide_items {
     flex-direction: row;
     margin: auto;
