@@ -1,5 +1,6 @@
 :root {
   --font-q: 'Quicksand', sans-serif;
+  --font-p: 'Press Start 2P', cursive;
 
   --color-dark-blue: #1B2349;
   --color-blue-100: #161084FF;
@@ -44,6 +45,9 @@ a {
 
 .subtile-white {
   color: var(--color-white);
+}
+.subtile-games {
+  font-family: var(--font-p);
 }
 
 .subtitle::after,
